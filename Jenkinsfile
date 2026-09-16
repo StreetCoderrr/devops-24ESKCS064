@@ -11,13 +11,13 @@ pipeline {
 
         stage('Environment') {
             steps {
-                bat 'python --version'
+                bat '"C:\\Users\\aryan\\AppData\\Local\\Python\\bin\\python.exe" --version'
             }
         }
 
         stage('Create Virtual Environment') {
             steps {
-                bat 'python -m venv .jenkins-venv'
+                bat '"C:\\Users\\aryan\\AppData\\Local\\Python\\bin\\python.exe" -m venv .jenkins-venv'
             }
         }
 
